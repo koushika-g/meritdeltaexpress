@@ -1,0 +1,19 @@
+doctype html
+html
+   head
+      title Hello 
+   body
+      p(style="color:red") Lets understand Pug based templating!
+      table(border="2" cellpadding="10") 
+        thead 
+            th FullName
+                button sort
+            th Email
+                button sort
+            th Mobile
+                button sort
+        each val in allemployees
+            tr 
+                td #{val.name}
+                td #{val.email}
+                td #{val.mobile}
